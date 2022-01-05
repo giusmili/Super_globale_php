@@ -9,11 +9,12 @@ Exemple :
 ```
 Récupération des variables : 
 ```PHP
-    <?php
-        if(isset($_GET["genre"])){
-            $_genre = $_GET["genre"];
+<?php
+    if(isset($_GET["genre"])){
+        $_genre = $_GET["genre"];
 
             //suite du code
 
-        }
+    }
+?>
 ```
