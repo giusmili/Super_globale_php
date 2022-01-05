@@ -1,0 +1,222 @@
+
+html{
+    font-size: 62.5%;
+
+}
+body{
+    font: 1.6rem sans-serif;
+    margin: 0;
+    line-height: 2.6rem;
+    background: #292929;
+}
+ul, ol, p, figure, h1, h2, h3{
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    list-style: none;
+}
+caption .material-icons, thead th .material-icons, tfoot th .material-icons{
+    vertical-align: -.5rem;
+    margin-right: .3rem;
+}
+*{
+    box-sizing: border-box;
+}
+.material-icons{
+    vertical-align: middle;
+
+}
+a{
+    text-decoration: none;
+}
+button{
+    border: 0;
+    background: none;
+}
+/* theme */
+
+header{
+    position: fixed;
+    width: 100%;
+    line-height: 6.5rem;
+    background: #16a085;
+    z-index: 1;
+
+}
+.header-dark{
+    background: #000;
+    box-shadow: 0 0 1rem #222;
+    transition: all 500ms ease-in-out;
+}
+header > h1{
+    line-height: 8.5rem;
+    text-align: center;
+    color:  #fafafa;
+    font-family: 'badaboom_bbregular';
+    font-size: 7.5rem;
+    letter-spacing: 0.4rem;
+    text-shadow: .5rem .5rem 0 #0d6151;
+
+}
+header h1 .material-icons{
+    font-size: 7rem;
+}
+header h1 code{
+    font-style: italic;
+    color: #595a5a
+}
+main{
+    padding-top: 8.5rem;
+}
+main section{
+    max-width: 120rem;
+    margin: 5rem auto 2rem;
+    background-color: rgba(250,250,250, 0.7);
+}
+main section {
+    position: relative;
+    text-align: center;
+    padding: 2rem;
+   
+    
+}
+main section h2{
+    font-size: 1.5vw;
+    padding: 1rem;
+}
+
+main section h2{
+    background-color: #1f3250;
+    color: #fafafa;
+}
+main section p{
+    
+    font-size: 1.2vw;
+}
+main section p:not(p:last-child){
+    margin-bottom: 1rem;
+}
+section button, section p a{
+    /* boutons */
+    border: solid .1rem transparent;
+    padding: 1.5rem;
+    background-color: #1f3250;
+    color: #fafafa;
+    font-size: inherit;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    cursor: pointer;
+    font-size: small;
+}
+hr{
+    background-color: #474646;
+    border: 0;
+    height: .1rem;
+}
+
+.email form *{
+    display: block;
+    line-height: 4.5rem;
+    width: 100%;
+    margin-bottom: .8rem;
+    border: solid .1rem #222;
+    padding: .5rem;
+    background-color: #ccc;
+    outline: 0;
+    transition: all 500ms ease-in-out;
+}
+.email fieldset{
+    border: 0;
+}
+.email fieldset legend{
+    font-size: x-large;
+    color: #fafafa;
+}
+.email fieldset form input[type="submit"]{
+    width: 20%;
+    margin: auto;
+    font-size: inherit;
+    background: rgb(107, 92, 247);
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+.email fieldset form label{
+    background: none;
+    border: 0;
+    color: #fff;
+}
+.email fieldset form [placeholder] {
+    font-size: inherit;
+}
+aside{
+     max-width: 40rem;
+     margin: 0 auto;
+     border: solid .1rem #fafafa;
+     
+ }
+figure{
+    padding: 1rem 0 0;
+}
+figure figcaption h2{
+    background-color: transparent;
+    color: #222;
+}
+
+footer, .email{
+     display: grid;
+     align-items: center;
+    
+ }
+ footer p{
+     text-align: center;
+     font-size: large;
+     color: #fafafa;
+     line-height: 4.5rem;
+ }
+ footer p a{
+     text-decoration: none;
+     color: #fafafa;
+ }
+
+ /* responsive */
+ @media screen and (max-width: 80rem){
+    main section, footer{
+        display: block;
+        width: auto;
+        height: auto;
+    }
+    main section{
+        padding-bottom: 1rem;
+    }
+    main section p, main section h2{
+        text-align: justify;
+        font-size: 2.5rem;
+    }
+ 
+    footer{
+        padding: 2rem;
+    }
+    .email form *{
+        width: 100%;
+        line-height: 2.5rem;
+
+        
+    }
+    .email fieldset form input[type="submit"]{
+        margin: 0;
+        width: 100%;
+       
+    }
+    aside figure figcaption p, :is(h2){
+        font-size: 5vw;
+    }
+    section button{
+        display: block;
+        width: 80%;
+        margin: 0 auto; 
+        position: static;
+        margin: 0 auto;
+    }
+ }
