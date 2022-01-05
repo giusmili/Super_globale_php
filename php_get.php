@@ -8,7 +8,7 @@
             <span class="material-icons" aria-hidden="true">
                 insights
             </span>
-            <?= title ?> 
+            <?= $_langs->title ?> 
             <!-- print, echo  -->
             
         </h1>
